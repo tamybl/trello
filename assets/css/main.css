@@ -1,0 +1,139 @@
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-size: 16px;
+	position: relative;
+	color: #333;
+}
+
+header, nav {
+	margin: 0 auto;
+	width: 100%;
+	height: 40px;
+	background-color: #026AA7;
+	position: fixed;
+	z-index: 5;
+}
+
+.search, .account {
+	width: 25%;
+	height: 40px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.btn-tableros {
+	margin: 5px 5px 5px 10px;
+	background-color: #4e97c2;
+	padding: 7px 10px 7px 10px;
+	border-radius: 4px;
+}
+
+input[type='search'] {
+	height: 30px;
+	margin-top: 5px; 
+	background-color: #4e97c2; 
+	border: none;
+	border-radius: 4px;
+	outline: none;
+
+}
+
+.header-logo {
+	width: 49%;
+	height: 40px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+
+span.logo {
+	width: 80px;
+	height: 30px;
+	margin-top: 5px;
+	background-image: url(../img/header-logo.png);
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 10;
+}
+
+/* Menu Usuario - Derecha */
+
+span.icon-menu {
+	margin-top: 5px;
+	background-color: #4e97c2;
+}
+
+.icon-menu a, .icon-user a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+main {
+	width: 100%;
+	height: 800px;
+	position: absolute;
+	top: 40px;
+	background-color: #1d8dc2;
+}
+
+.second-menu {
+	width: 100%;
+	height: 40px;
+
+}
+
+#list-content {
+	width: 250px;
+	height: auto;
+	display: inline-block;
+	margin: 10px;
+	text-align: center;
+}
+
+.is-shown {
+	background-color: #e2e4e6;
+	border-radius: 4px;
+}
+
+/* Colores iniciales del Input cuando no hay lista */
+
+.initial-input {
+	background-color: #157cac;
+	border: none;
+	color: #e6e6e9;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 6px;
+	padding: 10px;
+	outline: 0;
+}
+
+.initial-input:hover {
+	background-color: #11658e;
+}
+
+.initial-input::placeholder {
+	color: #ccc;
+}
+
+.grey-input {
+	background-color: #ccc;
+	border: none;
+	color: #333;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 6px;
+	padding: 10px;
+	outline: 0;
+}
+
+.grey-input::placeholder {
+	color: #333;
+}
