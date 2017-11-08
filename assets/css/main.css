@@ -75,7 +75,7 @@ span.icon-menu {
 }
 
 
-main {
+#main {
 	width: 100%;
 	height: 800px;
 	position: absolute;
@@ -89,7 +89,7 @@ main {
 
 }
 
-#list-content {
+#initial-list {
 	width: 250px;
 	height: auto;
 	display: inline-block;
@@ -111,6 +111,7 @@ main {
 	font-size: 1em;
 	font-weight: bold;
 	border-radius: 6px;
+	margin: 10px;
 	padding: 10px;
 	outline: 0;
 }
@@ -125,7 +126,8 @@ main {
 
 .grey-input {
 	background-color: #ccc;
-	border: none;
+	border: 1px solid #595959;
+	margin: 10px;
 	color: #333;
 	font-size: 1em;
 	font-weight: bold;
@@ -137,3 +139,30 @@ main {
 .grey-input::placeholder {
 	color: #333;
 }
+
+.list-options {
+	text-align: left;
+}
+
+#btn-add {
+	background-color: #5aac44;
+	border: 1px solid #5aac44;
+	border-radius: 4px;
+	padding: 4px 16px 4px 16px;
+	color: #fff;
+	font-size: 1em;
+	font-weight: bold;
+}
+ 
+/* Estilo de Lista Creada */
+
+.list-ready {
+	width: 20%;
+	height: auto;
+	display: inline-block;
+	margin: 10px;
+	background-color: #e2e4e6;
+	border-radius: 4px;
+	text-align: center;
+}
+

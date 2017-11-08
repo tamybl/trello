@@ -16,22 +16,26 @@
 			</div>
 			<div class="header-logo"><a href="#"><span class="logo"></span></a></div>
 			<div class="account">
-				<span class="icon-menu"><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>></a></span>
+				<span class="icon-menu"><a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a></span>
 				<span class="icon-menu"><a href="#"></a></span>
 				<span class="icon-menu"><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a></span>
 				<span class="icon-user"><a href="#">TB</a></span>
 			</div>
 		</nav>
 	</header>
-	<main>
+	<div id="main">		
 		<div class="second-menu">
 			<span class="title"><h3>Tablero Reto del Codigo</h3></span>
 		</div>
-		<div id="list-content">
-		 	<input type="text" id="list" class="initial-input" onclick="newList()" placeholder="Añadir una lista...">
+		<div id="list-full">
+			<!-- Caja Inicial Lista -->
+			<div id="initial-list">
+			<input type="text" id="list" class="initial-input" onclick="newList()" placeholder="Añadir una lista...">
 		 	<div id="cont"></div>
+		 	</div>
 		</div>
-	</main>
+	</div>
+
 	<script src="assets/js/app.js"></script>
 </body>
 </html>
