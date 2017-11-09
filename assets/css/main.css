@@ -6,7 +6,8 @@
 
 body {
 	margin: 0;
-	font-size: 16px;
+	font-size: 14px;
+	font-family:  "Helvetica Neue", Arial, Helvetica, sans-serif;
 	position: relative;
 	color: #333;
 }
@@ -32,6 +33,7 @@ header, nav {
 	background-color: #4e97c2;
 	padding: 7px 10px 7px 10px;
 	border-radius: 4px;
+	color: #fff;
 }
 
 input[type='search'] {
@@ -86,15 +88,27 @@ span.icon-menu {
 .second-menu {
 	width: 100%;
 	height: 40px;
+	color: #fff;
 
 }
 
+.title {
+	padding-left: 10px;
+	display: inline-block;
+}
+
+#list-full  {
+	vertical-align: top;
+}
+
 #initial-list {
-	width: 250px;
+	width: auto;
 	height: auto;
 	display: inline-block;
 	margin: 10px;
+	padding: 6px 4px 2px 4px;
 	text-align: center;
+	vertical-align: top;
 }
 
 .is-shown {
@@ -108,12 +122,6 @@ span.icon-menu {
 	background-color: #157cac;
 	border: none;
 	color: #e6e6e9;
-	font-size: 1em;
-	font-weight: bold;
-	border-radius: 6px;
-	margin: 10px;
-	padding: 10px;
-	outline: 0;
 }
 
 .initial-input:hover {
@@ -122,26 +130,33 @@ span.icon-menu {
 
 .initial-input::placeholder {
 	color: #ccc;
+	padding-left: 4px;
 }
+
+.grey-input, .initial-input {
+	width: 270px;
+	height: 40px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.15);
+	font-size: 1em;
+	border-radius: 3px;
+	padding: 4px;
+	outline: 0;
+} 
 
 .grey-input {
 	background-color: #ccc;
-	border: 1px solid #595959;
-	margin: 10px;
-	color: #333;
-	font-size: 1em;
-	font-weight: bold;
-	border-radius: 6px;
-	padding: 10px;
-	outline: 0;
+	border: 1px solid #aaa;
+    color: #333;
 }
 
 .grey-input::placeholder {
 	color: #333;
+	padding-left: 4px;
 }
 
 .list-options {
 	text-align: left;
+	padding: 4px 6px 4px 6px;
 }
 
 #btn-add {
@@ -163,6 +178,64 @@ span.icon-menu {
 	margin: 10px;
 	background-color: #e2e4e6;
 	border-radius: 4px;
-	text-align: center;
+	text-align: left;
+	vertical-align: top;
 }
 
+.title-list {
+	cursor: pointer;
+	font-weight: bold;
+	padding: 10px 8px;
+}
+
+.add-card {
+	width: 270px; 
+	height: 40px;
+}
+
+.add-card:hover {
+	background-color: #cdd2d4;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+} 
+
+.open-card {
+	line-height: 40px;
+	padding: 10px 142px 10px 4px;
+	color: #8b9398;
+	text-decoration: none;
+	bottom: 0;
+}
+
+.open-card:hover {
+	color: #4d4d4d;
+	text-decoration: underline;
+	background-color: #cdd2d4
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+/* Seccion textarea tarjeta, boton añadir, close icon */
+
+.txt-card {
+	width: 95%;
+    padding: 6px;
+    margin: 0px 6px;
+    border-radius: 3px;
+}
+
+textarea {
+	background-color: 
+}
+
+.btn-controls {
+	width: 100%;
+	padding: 4px 6px 8px 6px;
+}
+
+/* Iconos */
+
+.fa-times {
+	padding: 6px;
+
+}
