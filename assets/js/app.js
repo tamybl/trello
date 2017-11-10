@@ -1,6 +1,3 @@
-// Asignar ID numero secuencial a las nuevas listas. Cuando se desee borrar una en particular, se llamar el ID para afecta la lista y no a la primera coincidencia.
-
-
 // Funcion añadir Lista al hacer click en Input
 function newList () {
 	// Cambia el estilo del input inicial
@@ -104,6 +101,7 @@ function addList() {
 		txtSection.setAttribute('class', 'txt-section');
 		var textarea = document.createElement('textarea');
 		textarea.setAttribute('class', 'txt-card');
+		textarea.setAttribute('id', 'contentcard');
 		txtSection.appendChild(textarea);
 		// Crear seccion Boton Añadir
 		var btnSection = document.createElement('div');
@@ -113,7 +111,7 @@ function addList() {
 		// Añadir atributos al elemento input., type, ID estilo, onclick, value
 		btnAdd.setAttribute('type', 'button');
 		btnAdd.setAttribute('id', 'btn-add');
-		btnAdd.setAttribute('onclick', 'addCard()');
+		//btnAdd.setAttribute('onclick', 'addCard()');
 		btnAdd.setAttribute('value', 'Añadir');
 		// Crear Icono borrar
 		var iconClose = document.createElement('i');
@@ -132,10 +130,22 @@ function addList() {
 			createList.removeChild(txtSection);
 			createList.removeChild(btnSection);
 		});
-	});
-	
+		// Para capturar
+		btnAdd.addEventListener('click', function () {
+			// Funcion verificar que hay contenido en textarea
+			var cardAlreadySection = document.createElement('div');
+			cardAlreadySection.setAttribute('class', 'create-card');
+			var titlecard = document.createTextNode(textarea.value);
+			cardAlreadySection.appendChild(titlecard);
+			createList.insertBefore(cardAlreadySection, txtSection);
+			// Limpiar
+			textarea.value = '';
+			// Focus
+			textarea.focus();
+		});	
+	});	
 }
 
-function addCard () {
+/*function addCard () {
 	alert('aqui se creara una tarjetita :3');
-}
+} */

@@ -25,7 +25,6 @@ header, nav {
 	width: 25%;
 	height: 40px;
 	display: inline-block;
-	vertical-align: top;
 }
 
 .btn-tableros {
@@ -168,7 +167,11 @@ span.icon-menu {
 	font-size: 1em;
 	font-weight: bold;
 }
- 
+
+#btn-add:hover {
+
+}
+
 /* Estilo de Lista Creada */
 
 .list-ready {
@@ -186,6 +189,7 @@ span.icon-menu {
 	cursor: pointer;
 	font-weight: bold;
 	padding: 10px 8px;
+	word-wrap: break-word;
 }
 
 .add-card {
@@ -225,7 +229,12 @@ span.icon-menu {
 }
 
 textarea {
-	background-color: 
+	height: 60px;
+	border: none;
+	box-shadow: outset 0 1px 1px rgba(0,0,0,.15);
+	outline: none;
+	font-size: 1em;
+
 }
 
 .btn-controls {
@@ -238,4 +247,20 @@ textarea {
 .fa-times {
 	padding: 6px;
 
+}
+
+.fa-plus, .fa-bell-o {
+	 
+}
+
+.create-card {
+	margin: 4px 7px;
+	background-color: #fff;
+	padding: 6px 2px 6px 2px;
+	border-radius: 3px;
+	word-wrap: break-word;
+}
+
+.create-card:hover {
+	background-color: #edeff0;
 }
