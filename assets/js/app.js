@@ -1,4 +1,5 @@
 // Funcion añadir Lista al hacer click en Input
+
 function newList () {
 	// Cambia el estilo del input inicial
 	document.getElementById('list').setAttribute('class', 'grey-input');
@@ -11,7 +12,6 @@ function newList () {
 	// Añadir atributos al elemento input., type, ID estilo, onclick, value
 	btnSave.setAttribute('type', 'button');
 	btnSave.setAttribute('id', 'btn-add');
-	// Si hay al menos un caracter en el input, se agrega el evento onclick
 	btnSave.setAttribute('value', 'Guardar');
 	// Crear Icono borrar
 	var iconClose = document.createElement('i');
@@ -145,7 +145,3 @@ function addList() {
 		});	
 	});	
 }
-
-/*function addCard () {
-	alert('aqui se creara una tarjetita :3');
-} */
